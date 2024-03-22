@@ -6,13 +6,18 @@
 #include <stdio.h>
 
 int main() {
-    int num, a, b, c;
-    
-    a = num / 100;
-    b = (num % 100) / 10;
-    c = (num % 100) % 10;
+   int num, rvs = 0;
+    scanf("%d", &num);
 
-    printf("%d%d%d\n", c, b, a);
+    while (num != 0) {
+        int rem = num % 10;
+        rvs = rvs * 10 + rem;
+        num /= 10;
+    }
+
+    printf("%d\n", rvs);
+
+    return 0;
 
 
     return 0;
