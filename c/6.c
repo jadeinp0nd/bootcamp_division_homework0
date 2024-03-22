@@ -6,7 +6,15 @@
 #include <stdio.h>
 
 int main() {
-    // 이곳에 코드를 작성해주세요!
+   char alph;
 
+    scanf("%c",&alph);
+
+    if(alph=='a'||alph=='e'||alph=='i'||alph=='o'||alph=='u'){
+        printf("O\n");
+    }
+    else{
+        printf("X\n");
+    }
     return 0;
 }

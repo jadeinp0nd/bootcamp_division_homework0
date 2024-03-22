@@ -6,7 +6,14 @@
 #include <stdio.h>
 
 int main() {
-    // 이곳에 코드를 작성해주세요!
+    int num, a, b, c;
+    
+    a = num / 100;
+    b = (num % 100) / 10;
+    c = (num % 100) % 10;
+
+    printf("%d%d%d\n", c, b, a);
+
 
     return 0;
 }

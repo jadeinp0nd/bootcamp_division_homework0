@@ -6,7 +6,15 @@
 #include <stdio.h>
 
 int main() {
-    // 이곳에 코드를 작성해주세요!
+     int time;
+    
+    scanf("%d",&time);
 
+    if(time>=0&&time<12){
+        printf("AM\n");
+    }
+    else{
+        printf("PM\n");
+    }
     return 0;
 }
